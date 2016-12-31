@@ -14,8 +14,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.seoService.setTitle('Contact - TIWed Inc.');
-      this.seoService.setMetaDescription('Contact Desciption for - TIWed Inc.');
+      this.seoService.setTitle('How Google crawls Angular - Contact | TIWed Inc.');
+      this.seoService.setMetaDescription('Contact the people that built the site that tests how Google crawls Angular - A site by TIWed Inc. that tests the ins and outs of how Google crawls Angular sites.');
       this.seoService.setCanonicalLink('http://www.tiwedinc.com/contact');
       this.seoService.setMetaRobots('index');
     });
