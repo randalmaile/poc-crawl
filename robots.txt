@@ -1,0 +1,3 @@
+User-agent: *
+Noindex: /contact
+Sitemap: http://www.tiwedinc.com/sitemap.xml

@@ -5,15 +5,20 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 // Routing
-// import { routing } from './app.routes';
 import { routing } from './app.routes';
 
+
+// Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EventComponent } from './event/event.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CalendarComponent } from './calendar/calendar.component';
+
+// Services
+import { SeoService } from './shared/seo-service.service';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +35,9 @@ import { CalendarComponent } from './calendar/calendar.component';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [
+    SeoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
