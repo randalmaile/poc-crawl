@@ -8,6 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  projectDescription:string;
 
   constructor(private seoService: SeoService, private route: ActivatedRoute, private router: Router) { }
 
@@ -17,6 +18,8 @@ export class HomeComponent implements OnInit {
       this.seoService.setMetaDescription('Home Desciption for - TIWed Inc.');
       this.seoService.setCanonicalLink('http://www.tiwedinc.com');
       this.seoService.setMetaRobots('index');
+
+      this.projectDescription = 'There are tons of rumors and articles on the web talking about how deficient or efficient Google is with crawling an angular site.  Here are the things we are going to test with this site.';
     });
   }
 
